@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>OMDB</title>
+    </head>
+    <body>
+        <div class="navbar">
+
+            <div class="navLogo">
+                <a href=#logo><img class="navItem" alt="logo" src="https://logos-download.com/wp-content/uploads/2016/03/Netflix_logo.png"></a>
+            </div>
+
+            <div class="navLeft">
+                <a href=#home><div class="navItem">Home</div></a>
+                <a href=#tvshows><div class="navItem">TV Shows</div></a>
+                <a href=#movies><div class="navItem">Movies</div></a>
+                <a href=#latest><div class="navItem">Latest</div></a>
+                <a href=#mylist><div class="navItem">My List</div></a>
+            </div>
+
+            <div class="navRight">
+                <input id="search" type="text" placeholder="Search Here">
+                <button onclick="search()">Search</button>
+            </div>
+        </div>
+
+        <div class="scrollRight" onclick="myScrollRight(event)">
+            <button>Right</button>
+        </div>
+
+        <div class="scrollLeft" onclick="myScrollLeft(event)">
+            <button>Left</button>
+        </div>
+
+        <div id='container' ></div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
